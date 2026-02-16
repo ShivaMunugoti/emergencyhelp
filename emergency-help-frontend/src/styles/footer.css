@@ -1,0 +1,42 @@
+.footer {
+  padding: 55px 0;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.footer-title {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
