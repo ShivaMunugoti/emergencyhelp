@@ -10,7 +10,19 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+// ✅ CORS (Vercel Frontend + Localhost)
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "https://emergencyhelp.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // Routes
