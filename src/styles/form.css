@@ -1,0 +1,50 @@
+.form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 430px;
+  margin: 35px auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-box h2 {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 11px;
+  margin: 10px 0px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+  border-color: black;
+}
+
+.form-box textarea {
+  height: 95px;
+  resize: none;
+}
+
+.form-box button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+}
+.form-box button.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
