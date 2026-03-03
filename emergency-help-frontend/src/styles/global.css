@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.25s ease;
+}
+
+/* ---------- LIGHT THEME ---------- */
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  --red: #ff2d2d;
+  --blue: #2563eb;
+  --green: #16a34a;
+  --black: #111827;
+}
+
+/* ---------- DARK THEME ---------- */
+body.dark {
+  --bg: #0b1220;
+  --text: #f9fafb;
+  --muted: #b7c0ce;
+  --card: #101a2f;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+
+  --red: #ff3b3b;
+  --blue: #3b82f6;
+  --green: #22c55e;
+  --black: #f9fafb;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn-red {
+  background: var(--red);
+  color: white;
+}
+.btn-blue {
+  background: var(--blue);
+  color: white;
+}
+.btn-green {
+  background: var(--green);
+  color: white;
+}
+.btn-black {
+  background: var(--black);
+  color: #111;
+}
+
+body.dark .btn-black {
+  background: #f9fafb;
+  color: #111;
+}
+
+/* ---------- SECTION ---------- */
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.section-sub {
+  text-align: center;
+  margin: 12px auto 40px auto;
+  max-width: 750px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ---------- GRID ---------- */
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+.btn {
+  border-radius: 14px;
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.navbar {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
